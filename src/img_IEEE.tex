@@ -1,0 +1,57 @@
+\RequirePackage[OT1]{fontenc}
+\PassOptionsToClass{conference}{IEEEtran}
+\documentclass[class=IEEEtran]{standalone}
+
+\usepackage[english]{babel}
+\usepackage{cite}
+\usepackage{xcolor} 
+\definecolor{lfdblack}{HTML}{000000}
+\definecolor{lfdyellow}{HTML}{E69F00}
+\definecolor{lfddgrey}{HTML}{999999}
+\definecolor{lfdgreen}{HTML}{009371}
+\definecolor{lfdhgrey}{HTML}{beaed4}
+\definecolor{lfdred}{HTML}{ed665a}
+\definecolor{lfdblue}{HTML}{1f78b4}
+\definecolor{bggray}{gray}{0.9}
+\usepackage{booktabs}
+\usepackage{csquotes}
+\usepackage{tablefootnote}
+\usepackage{numprint}
+\usepackage{nicematrix}
+\usepackage[compat=0.6]{yquant}
+\usepackage{lipsum}
+\usepackage{comment}
+\usepackage{subcaption}
+\usepackage{pgfplots}
+\pgfplotsset{compat = newest}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, shapes.geometric,
+                positioning,fit,shadows.blur,
+                patterns,calc, matrix,
+                tikzmark, backgrounds}
+\usepackage{tikzpagenodes}
+
+\usepackage{fp}
+\usepackage{xspace}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{amsthm} \usepackage{bbm}
+\usepackage{quantikz}
+\usepackage{placeins}
+\usepackage[T1]{fontenc}
+\usepackage[colorlinks=true,urlcolor=teal,
+            linkcolor=teal,citecolor=teal]{hyperref}
+\usepackage[most]{tcolorbox}
+\usepackage{listings}
+\usepackage{censor}
+\usepackage{todonotes}
+\usepackage[printonlyused, nolist]{acronym}
+\usepackage[bold,full]{complexity}
+
+\newboolean{anonymous}
+\setboolean{anonymous}{false}
+
+\input{commands.tex}
+
+\begin{document}
+\input{tikz/FILE}
+\end{document}%

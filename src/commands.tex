@@ -1,0 +1,142 @@
+\newcommand{\TODO}[1]{\textcolor{red}{TODO: #1}}
+
+\addto\extrasenglish{%
+  \renewcommand{\chapterautorefname}{Chapter}%
+  \renewcommand{\sectionautorefname}{Sec.}%
+  \renewcommand{\subsectionautorefname}{Sec.}%
+  \renewcommand{\subsubsectionautorefname}{Sec.}%
+  \renewcommand{\paragraphautorefname}{Par.}%
+  \renewcommand{\tableautorefname}{Tab.}%
+  \renewcommand{\equationautorefname}{Eq.}%
+  \renewcommand{\figureautorefname}{Fig.}%
+  \renewcommand{\appendixautorefname}{Appendix}%
+  \renewcommand{\theoremautorefname}{Property}
+}
+\newcommand{\algorithmautorefname}{Alg.}
+
+\newcommand{\atUL}[1]{\textcolor{blue}{@UL: #1}}
+\newcommand{\atOTH}[1]{\textcolor{magenta}{@OTH: #1}}
+
+\newcommand{\Ket}[1]{$\ket{#1}$}
+\newcommand{\Bra}[1]{$\bra{#1}$}
+\newcommand{\BraKet}[2]{$\braket{#1}{#2}$}
+
+\makeatletter
+\def\calcLength(#1,#2)#3{%
+  \pgfpointdiff{\pgfpointanchor{#1}{center}}%
+  {\pgfpointanchor{#2}{center}}%
+  \pgf@xa=\pgf@x%
+  \pgf@ya=\pgf@y%
+  \FPeval\@temp@a{\pgfmath@tonumber{\pgf@xa}}%
+  \FPeval\@temp@b{\pgfmath@tonumber{\pgf@ya}}%
+  \FPeval\@temp@sum{(\@temp@a*\@temp@a+\@temp@b*\@temp@b)}%
+  \FProot{\FPMathLen}{\@temp@sum}{2}%
+  \FPround\FPMathLen\FPMathLen5\relax
+  \global\expandafter\edef\csname #3\endcsname{\FPMathLen}
+}
+\makeatother
+
+\lstdefinestyle{query}{
+  language=SQL,
+  stepnumber=1,
+  numbersep=10pt,
+  tabsize=4,
+  showspaces=false,
+  showstringspaces=false,
+  basicstyle=\linespread{1}\fontfamily{lmtt}\selectfont\small,
+  keywordstyle=\color{blue},
+  stringstyle=\color{purple},
+  upquote=true,
+  breaklines=true,
+  commentstyle=\color{CadetBlue}
+}
+
+\definecolor{mygray}{rgb}{0.643,0.643,0.643}
+\newtcolorbox{querybox}[2][]{%
+  sidebyside align=top,
+  enhanced,
+  boxsep=2pt,
+  arc=0pt,
+  top=-3pt, bottom=-3pt,
+  left=2pt, right=0pt,
+  colback=white,
+  colframe=mygray,
+  boxrule=0.5pt,
+  leftrule=12pt,
+  overlay unbroken and first ={%
+      \node[rotate=90,
+        minimum width=0.5cm,
+        anchor=south,
+        yshift=-11pt,
+        white]
+      at (frame.west) {#2};
+    }
+}
+
+\newtcolorbox{matrixbox}[2][]{%
+  sidebyside align=top,
+  enhanced,
+  boxsep=0pt,
+  arc=0pt,
+  left=-1em,
+  top=-0.8em,
+  boxrule=0pt,
+  colframe=bggray,
+  colback=bggray,
+  leftrule=12pt,
+  overlay unbroken and first ={%
+      \node[rotate=90,
+        minimum width=0.5cm,
+        anchor=south west,
+        font=\itshape,
+        yshift=0pt, %-14pt,
+        xshift=0.5em,
+        black]
+      at (frame.south west) {#2};
+    }
+}
+\newcommand{\CGate}[1]{\ensuremath{\text{C\raisebox{0.08em}{--}}\!#1}\xspace}
+\newcommand{\rx}{R_X}
+\newcommand{\ry}{R_Y}
+\newcommand{\rz}{R_Z}
+\newcommand{\rzz}{R_{ZZ}}
+\newcommand{\rzzT}{R_{Z^2}}
+\newcommand{\rzn}{R_{Z^n}}
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\newtheoremstyle{property}% 〈name〉
+{3pt}% 〈Space above〉1
+{3pt}% 〈Space below 〉1
+{}% 〈Body font〉
+{}% 〈Indent amount〉2
+{\bfseries}% 〈Theorem head font〉
+{:}% 〈Punctuation after theorem head 〉
+{.5em}% 〈Space after theorem head 〉3
+{}% 〈Theorem head spec (can be left empty, meaning ‘normal’ )〉
+
+\theoremstyle{property}
+\newtheorem{theorem}{Property} 
+\newtheorem{corollary}{Corollary}[theorem] 
+\newenvironment{subproof}[1][\proofname]{%
+  \renewcommand{\qedsymbol}{$\blacksquare$}%
+  \begin{proof}[#1]%
+    }{%
+  \end{proof}%
+}
+
+\newcommand{\ie}{\emph{i.e.}\xspace}
+\newcommand{\eg}{\emph{e.g.}\xspace}
+\newcommand{\etal}{\emph{et al.}\xspace}
+\newcommand{\rj}{\emph{ReJoin}\xspace}
+
+\newcommand{\suppweb}{\href{https://github.com/lfd/Fast_Quadratisation}{supplementary website}\xspace}
+\newcommand{\repropkg}{\href{https://doi.org/10.5281/zenodo.14245587}{reproduction package}\xspace}
+
+\newlength{\WIDTH}\newlength{\HEIGHT}
+\renewcommand{\Join}{\bowtie}
+
+\ifbool{anonymous}{}{\renewcommand{\censor}[1]{#1}}
+\ifbool{anonymous}{}{\renewcommand{\blackout}[1]{#1}}
+\ifbool{anonymous}{\newcommand{\genemail}[2]{\href{mailto:xxx.xxx@xx.xx}{\blackout{#2}}}}{\newcommand{\genemail}[2]{\href{#1}{#2}}}

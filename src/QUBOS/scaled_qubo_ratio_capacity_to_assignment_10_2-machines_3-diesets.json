@@ -1,0 +1,806 @@
+{
+  "qubo": {
+    "id": 0,
+    "name": "Model",
+    "variables": [
+      {
+        "id": 0,
+        "name": "0",
+        "slack": false
+      },
+      {
+        "id": 1,
+        "name": "1",
+        "slack": false
+      },
+      {
+        "id": 2,
+        "name": "2",
+        "slack": false
+      },
+      {
+        "id": 3,
+        "name": "3",
+        "slack": false
+      },
+      {
+        "id": 4,
+        "name": "4",
+        "slack": false
+      },
+      {
+        "id": 5,
+        "name": "5",
+        "slack": false
+      },
+      {
+        "id": 6,
+        "name": "capacity_constraint_machine_24@int_slack@0",
+        "slack": true
+      },
+      {
+        "id": 7,
+        "name": "capacity_constraint_machine_24@int_slack@1",
+        "slack": true
+      },
+      {
+        "id": 8,
+        "name": "capacity_constraint_machine_24@int_slack@2",
+        "slack": true
+      },
+      {
+        "id": 9,
+        "name": "capacity_constraint_machine_24@int_slack@3",
+        "slack": true
+      },
+      {
+        "id": 10,
+        "name": "capacity_constraint_machine_24@int_slack@4",
+        "slack": true
+      },
+      {
+        "id": 11,
+        "name": "capacity_constraint_machine_24@int_slack@5",
+        "slack": true
+      },
+      {
+        "id": 12,
+        "name": "capacity_constraint_machine_24@int_slack@6",
+        "slack": true
+      },
+      {
+        "id": 13,
+        "name": "capacity_constraint_machine_24@int_slack@7",
+        "slack": true
+      },
+      {
+        "id": 14,
+        "name": "capacity_constraint_machine_27@int_slack@0",
+        "slack": true
+      },
+      {
+        "id": 15,
+        "name": "capacity_constraint_machine_27@int_slack@1",
+        "slack": true
+      },
+      {
+        "id": 16,
+        "name": "capacity_constraint_machine_27@int_slack@2",
+        "slack": true
+      },
+      {
+        "id": 17,
+        "name": "capacity_constraint_machine_27@int_slack@3",
+        "slack": true
+      },
+      {
+        "id": 18,
+        "name": "capacity_constraint_machine_27@int_slack@4",
+        "slack": true
+      },
+      {
+        "id": 19,
+        "name": "capacity_constraint_machine_27@int_slack@5",
+        "slack": true
+      },
+      {
+        "id": 20,
+        "name": "capacity_constraint_machine_27@int_slack@6",
+        "slack": true
+      },
+      {
+        "id": 21,
+        "name": "capacity_constraint_machine_27@int_slack@7",
+        "slack": true
+      }
+    ],
+    "constant": 226746654488.0,
+    "matrix": "[[-113531745129.0, 7384308624.0, 35382579232.0, 0.0, 32660842368.0, 0.0, 680434216.0, 1360868432.0, 2721736864.0, 5443473728.0, 10886947456.0, 21773894912.0, 43547789824.0, 19052158048.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [7384308624.0, -105530078869.0, 0.0, 36982553608.0, 0.0, 34137741792.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 711202954.0, 1422405908.0, 2844811816.0, 5689623632.0, 11379247264.0, 22758494528.0, 45516989056.0, 13512856126.0], [35382579232.0, 0.0, -66661524006.0, 7384308624.0, 11028336384.0, 0.0, 229757008.0, 459514016.0, 919028032.0, 1838056064.0, 3676112128.0, 7352224256.0, 14704448512.0, 6433196224.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 36982553608.0, 7384308624.0, -65019382971.0, 0.0, 11527029696.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 240146452.0, 480292904.0, 960585808.0, 1921171616.0, 3842343232.0, 7684686464.0, 15369372928.0, 4562782588.0], [32660842368.0, 0.0, 11028336384.0, 0.0, -62950071578.0, 7384308624.0, 212083392.0, 424166784.0, 848333568.0, 1696667136.0, 3393334272.0, 6786668544.0, 13573337088.0, 5938334976.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 34137741792.0, 0.0, 11527029696.0, 7384308624.0, -61472610579.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 221673648.0, 443347296.0, 886694592.0, 1773389184.0, 3546778368.0, 7093556736.0, 14187113472.0, 4211799312.0], [680434216.0, 0.0, 229757008.0, 0.0, 212083392.0, 0.0, -1365286836.0, 8836808.0, 17673616.0, 35347232.0, 70694464.0, 141388928.0, 282777856.0, 123715312.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [1360868432.0, 0.0, 459514016.0, 0.0, 424166784.0, 0.0, 8836808.0, -2721736864.0, 35347232.0, 70694464.0, 141388928.0, 282777856.0, 565555712.0, 247430624.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [2721736864.0, 0.0, 919028032.0, 0.0, 848333568.0, 0.0, 17673616.0, 35347232.0, -5408126496.0, 141388928.0, 282777856.0, 565555712.0, 1131111424.0, 494861248.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [5443473728.0, 0.0, 1838056064.0, 0.0, 1696667136.0, 0.0, 35347232.0, 70694464.0, 141388928.0, -10674864064.0, 565555712.0, 1131111424.0, 2262222848.0, 989722496.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [10886947456.0, 0.0, 3676112128.0, 0.0, 3393334272.0, 0.0, 70694464.0, 141388928.0, 282777856.0, 565555712.0, -20784172416.0, 2262222848.0, 4524445696.0, 1979444992.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [21773894912.0, 0.0, 7352224256.0, 0.0, 6786668544.0, 0.0, 141388928.0, 282777856.0, 565555712.0, 1131111424.0, 2262222848.0, -39306121984.0, 9048891392.0, 3958889984.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [43547789824.0, 0.0, 14704448512.0, 0.0, 13573337088.0, 0.0, 282777856.0, 565555712.0, 1131111424.0, 2262222848.0, 4524445696.0, 9048891392.0, -69563352576.0, 7917779968.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [19052158048.0, 0.0, 6433196224.0, 0.0, 5938334976.0, 0.0, 123715312.0, 247430624.0, 494861248.0, 989722496.0, 1979444992.0, 3958889984.0, 7917779968.0, -34887717984.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 711202954.0, 0.0, 240146452.0, 0.0, 221673648.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -1343896491.0, 9236402.0, 18472804.0, 36945608.0, 73891216.0, 147782432.0, 295564864.0, 87745819.0], [0.0, 1422405908.0, 0.0, 480292904.0, 0.0, 443347296.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 9236402.0, -2678556580.0, 36945608.0, 73891216.0, 147782432.0, 295564864.0, 591129728.0, 175491638.0], [0.0, 2844811816.0, 0.0, 960585808.0, 0.0, 886694592.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 18472804.0, 36945608.0, -5320167552.0, 147782432.0, 295564864.0, 591129728.0, 1182259456.0, 350983276.0], [0.0, 5689623632.0, 0.0, 1921171616.0, 0.0, 1773389184.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 36945608.0, 73891216.0, 147782432.0, -10492552672.0, 591129728.0, 1182259456.0, 2364518912.0, 701966552.0], [0.0, 11379247264.0, 0.0, 3842343232.0, 0.0, 3546778368.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 73891216.0, 147782432.0, 295564864.0, 591129728.0, -20393975616.0, 2364518912.0, 4729037824.0, 1403933104.0], [0.0, 22758494528.0, 0.0, 7684686464.0, 0.0, 7093556736.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 147782432.0, 295564864.0, 591129728.0, 1182259456.0, 2364518912.0, -38423432320.0, 9458075648.0, 2807866208.0], [0.0, 45516989056.0, 0.0, 15369372928.0, 0.0, 14187113472.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 295564864.0, 591129728.0, 1182259456.0, 2364518912.0, 4729037824.0, 9458075648.0, -67388788992.0, 5615732416.0], [0.0, 13512856126.0, 0.0, 4562782588.0, 0.0, 4211799312.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 87745819.0, 175491638.0, 350983276.0, 701966552.0, 1403933104.0, 2807866208.0, 5615732416.0, -23954608587.0]]"
+  },
+  "variable_mappings": [
+    {
+      "machine_id": 24,
+      "machine_name_convenience_only": "GP260",
+      "dieset_id": 3,
+      "dieset_number_convenience_only": "4984449, 4984462",
+      "variable_id": 0,
+      "variable_name_convenience_only": "md_GP260_4984449, 4984462"
+    },
+    {
+      "machine_id": 27,
+      "machine_name_convenience_only": "GP640",
+      "dieset_id": 3,
+      "dieset_number_convenience_only": "4984449, 4984462",
+      "variable_id": 1,
+      "variable_name_convenience_only": "md_GP640_4984449, 4984462"
+    },
+    {
+      "machine_id": 24,
+      "machine_name_convenience_only": "GP260",
+      "dieset_id": 2,
+      "dieset_number_convenience_only": "4984449, 5031550",
+      "variable_id": 2,
+      "variable_name_convenience_only": "md_GP260_4984449, 5031550"
+    },
+    {
+      "machine_id": 27,
+      "machine_name_convenience_only": "GP640",
+      "dieset_id": 2,
+      "dieset_number_convenience_only": "4984449, 5031550",
+      "variable_id": 3,
+      "variable_name_convenience_only": "md_GP640_4984449, 5031550"
+    },
+    {
+      "machine_id": 24,
+      "machine_name_convenience_only": "GP260",
+      "dieset_id": 0,
+      "dieset_number_convenience_only": "4985498",
+      "variable_id": 4,
+      "variable_name_convenience_only": "md_GP260_4985498"
+    },
+    {
+      "machine_id": 27,
+      "machine_name_convenience_only": "GP640",
+      "dieset_id": 0,
+      "dieset_number_convenience_only": "4985498",
+      "variable_id": 5,
+      "variable_name_convenience_only": "md_GP640_4985498"
+    }
+  ],
+  "model": {
+    "dieset_choices": [
+      {
+        "dieset_id": 8,
+        "dieset_number": "3002866",
+        "machine_choices": [
+          {
+            "choice_name": "Put Dieset 3002866 on machine GP260",
+            "machine": {
+              "machine_id": 24,
+              "machine_name": "GP260",
+              "max_capacity_hours_per_timeslice": 953.0326653190314,
+              "max_capacity_constraint": {
+                "constraint_name": "Max Capacity Machine GP260",
+                "weight": 1.0
+              },
+              "cost_reallocation_euro": 10000.0
+            },
+            "work_required_hours": 16.494873808587574,
+            "work_cost": 29872.2164673521,
+            "transport_cost": 0.0,
+            "transport_costs_breakdown": [
+              {
+                "location_id": 2,
+                "location_name": "Dingolfing",
+                "truckloads": 12.0,
+                "transport_rate_euro_per_truck_per_km": 999.0,
+                "distance_km": 0.0,
+                "costs": 0.0
+              }
+            ]
+          }
+        ],
+        "assign_exactly_once_constraint": null
+      },
+      {
+        "dieset_id": 9,
+        "dieset_number": "3002878",
+        "machine_choices": [
+          {
+            "choice_name": "Put Dieset 3002878 on machine GP260",
+            "machine": {
+              "machine_id": 24,
+              "machine_name": "GP260",
+              "max_capacity_hours_per_timeslice": 953.0326653190314,
+              "max_capacity_constraint": {
+                "constraint_name": "Max Capacity Machine GP260",
+                "weight": 1.0
+              },
+              "cost_reallocation_euro": 10000.0
+            },
+            "work_required_hours": 15.959502279928897,
+            "work_cost": 28902.65862895123,
+            "transport_cost": 0.0,
+            "transport_costs_breakdown": [
+              {
+                "location_id": 2,
+                "location_name": "Dingolfing",
+                "truckloads": 6.0,
+                "transport_rate_euro_per_truck_per_km": 999.0,
+                "distance_km": 0.0,
+                "costs": 0.0
+              }
+            ]
+          }
+        ],
+        "assign_exactly_once_constraint": null
+      },
+      {
+        "dieset_id": 12,
+        "dieset_number": "3002931",
+        "machine_choices": [
+          {
+            "choice_name": "Put Dieset 3002931 on machine GP260",
+            "machine": {
+              "machine_id": 24,
+              "machine_name": "GP260",
+              "max_capacity_hours_per_timeslice": 953.0326653190314,
+              "max_capacity_constraint": {
+                "constraint_name": "Max Capacity Machine GP260",
+                "weight": 1.0
+              },
+              "cost_reallocation_euro": 10000.0
+            },
+            "work_required_hours": 15.61413059915918,
+            "work_cost": 28277.190515077276,
+            "transport_cost": 0.0,
+            "transport_costs_breakdown": [
+              {
+                "location_id": 2,
+                "location_name": "Dingolfing",
+                "truckloads": 31.0,
+                "transport_rate_euro_per_truck_per_km": 999.0,
+                "distance_km": 0.0,
+                "costs": 0.0
+              }
+            ]
+          }
+        ],
+        "assign_exactly_once_constraint": null
+      },
+      {
+        "dieset_id": 6,
+        "dieset_number": "3002943",
+        "machine_choices": [
+          {
+            "choice_name": "Put Dieset 3002943 on machine GP260",
+            "machine": {
+              "machine_id": 24,
+              "machine_name": "GP260",
+              "max_capacity_hours_per_timeslice": 953.0326653190314,
+              "max_capacity_constraint": {
+                "constraint_name": "Max Capacity Machine GP260",
+                "weight": 1.0
+              },
+              "cost_reallocation_euro": 10000.0
+            },
+            "work_required_hours": 16.431924882629104,
+            "work_cost": 29758.215962441307,
+            "transport_cost": 0.0,
+            "transport_costs_breakdown": [
+              {
+                "location_id": 2,
+                "location_name": "Dingolfing",
+                "truckloads": 31.0,
+                "transport_rate_euro_per_truck_per_km": 999.0,
+                "distance_km": 0.0,
+                "costs": 0.0
+              }
+            ]
+          }
+        ],
+        "assign_exactly_once_constraint": null
+      },
+      {
+        "dieset_id": 14,
+        "dieset_number": "3003468",
+        "machine_choices": [
+          {
+            "choice_name": "Put Dieset 3003468 on machine GP260",
+            "machine": {
+              "machine_id": 24,
+              "machine_name": "GP260",
+              "max_capacity_hours_per_timeslice": 953.0326653190314,
+              "max_capacity_constraint": {
+                "constraint_name": "Max Capacity Machine GP260",
+                "weight": 1.0
+              },
+              "cost_reallocation_euro": 10000.0
+            },
+            "work_required_hours": 24.59894727551633,
+            "work_cost": 44548.69351596008,
+            "transport_cost": 0.0,
+            "transport_costs_breakdown": [
+              {
+                "location_id": 2,
+                "location_name": "Dingolfing",
+                "truckloads": 78.0,
+                "transport_rate_euro_per_truck_per_km": 999.0,
+                "distance_km": 0.0,
+                "costs": 0.0
+              }
+            ]
+          }
+        ],
+        "assign_exactly_once_constraint": null
+      },
+      {
+        "dieset_id": 13,
+        "dieset_number": "3003701",
+        "machine_choices": [
+          {
+            "choice_name": "Put Dieset 3003701 on machine GP260",
+            "machine": {
+              "machine_id": 24,
+              "machine_name": "GP260",
+              "max_capacity_hours_per_timeslice": 953.0326653190314,
+              "max_capacity_constraint": {
+                "constraint_name": "Max Capacity Machine GP260",
+                "weight": 1.0
+              },
+              "cost_reallocation_euro": 10000.0
+            },
+            "work_required_hours": 24.703562685494223,
+            "work_cost": 44738.15202343003,
+            "transport_cost": 0.0,
+            "transport_costs_breakdown": [
+              {
+                "location_id": 2,
+                "location_name": "Dingolfing",
+                "truckloads": 22.0,
+                "transport_rate_euro_per_truck_per_km": 999.0,
+                "distance_km": 0.0,
+                "costs": 0.0
+              }
+            ]
+          }
+        ],
+        "assign_exactly_once_constraint": null
+      },
+      {
+        "dieset_id": 10,
+        "dieset_number": "4980181",
+        "machine_choices": [
+          {
+            "choice_name": "Put Dieset 4980181 on machine GP260",
+            "machine": {
+              "machine_id": 24,
+              "machine_name": "GP260",
+              "max_capacity_hours_per_timeslice": 953.0326653190314,
+              "max_capacity_constraint": {
+                "constraint_name": "Max Capacity Machine GP260",
+                "weight": 1.0
+              },
+              "cost_reallocation_euro": 10000.0
+            },
+            "work_required_hours": 126.70397256233355,
+            "work_cost": 229460.89431038604,
+            "transport_cost": 0.0,
+            "transport_costs_breakdown": [
+              {
+                "location_id": 2,
+                "location_name": "Dingolfing",
+                "truckloads": 182.0,
+                "transport_rate_euro_per_truck_per_km": 999.0,
+                "distance_km": 0.0,
+                "costs": 0.0
+              }
+            ]
+          }
+        ],
+        "assign_exactly_once_constraint": null
+      },
+      {
+        "dieset_id": 5,
+        "dieset_number": "4983105",
+        "machine_choices": [
+          {
+            "choice_name": "Put Dieset 4983105 on machine GP260",
+            "machine": {
+              "machine_id": 24,
+              "machine_name": "GP260",
+              "max_capacity_hours_per_timeslice": 953.0326653190314,
+              "max_capacity_constraint": {
+                "constraint_name": "Max Capacity Machine GP260",
+                "weight": 1.0
+              },
+              "cost_reallocation_euro": 10000.0
+            },
+            "work_required_hours": 58.102977097390514,
+            "work_cost": 105224.4915233742,
+            "transport_cost": 0.0,
+            "transport_costs_breakdown": [
+              {
+                "location_id": 2,
+                "location_name": "Dingolfing",
+                "truckloads": 38.0,
+                "transport_rate_euro_per_truck_per_km": 999.0,
+                "distance_km": 0.0,
+                "costs": 0.0
+              }
+            ]
+          }
+        ],
+        "assign_exactly_once_constraint": null
+      },
+      {
+        "dieset_id": 1,
+        "dieset_number": "4984418",
+        "machine_choices": [
+          {
+            "choice_name": "Put Dieset 4984418 on machine GP260",
+            "machine": {
+              "machine_id": 24,
+              "machine_name": "GP260",
+              "max_capacity_hours_per_timeslice": 953.0326653190314,
+              "max_capacity_constraint": {
+                "constraint_name": "Max Capacity Machine GP260",
+                "weight": 1.0
+              },
+              "cost_reallocation_euro": 10000.0
+            },
+            "work_required_hours": 254.79478776529336,
+            "work_cost": 461433.3606429463,
+            "transport_cost": 127573.04000000001,
+            "transport_costs_breakdown": [
+              {
+                "location_id": 26,
+                "location_name": "MSF",
+                "truckloads": 188.0,
+                "transport_rate_euro_per_truck_per_km": 1.31,
+                "distance_km": 518.0,
+                "costs": 127573.04000000001
+              },
+              {
+                "location_id": 2,
+                "location_name": "Dingolfing",
+                "truckloads": 358.0,
+                "transport_rate_euro_per_truck_per_km": 999.0,
+                "distance_km": 0.0,
+                "costs": 0.0
+              }
+            ]
+          }
+        ],
+        "assign_exactly_once_constraint": null
+      },
+      {
+        "dieset_id": 3,
+        "dieset_number": "4984449, 4984462",
+        "machine_choices": [
+          {
+            "choice_name": "Put Dieset 4984449, 4984462 on machine GP260",
+            "machine": {
+              "machine_id": 24,
+              "machine_name": "GP260",
+              "max_capacity_hours_per_timeslice": 953.0326653190314,
+              "max_capacity_constraint": {
+                "constraint_name": "Max Capacity Machine GP260",
+                "weight": 1.0
+              },
+              "cost_reallocation_euro": 10000.0
+            },
+            "work_required_hours": 153.57266466084454,
+            "work_cost": 278120.0957007895,
+            "transport_cost": 23071.72,
+            "transport_costs_breakdown": [
+              {
+                "location_id": 26,
+                "location_name": "MSF",
+                "truckloads": 34.0,
+                "transport_rate_euro_per_truck_per_km": 1.31,
+                "distance_km": 518.0,
+                "costs": 23071.72
+              },
+              {
+                "location_id": 2,
+                "location_name": "Dingolfing",
+                "truckloads": 42.0,
+                "transport_rate_euro_per_truck_per_km": 999.0,
+                "distance_km": 0.0,
+                "costs": 0.0
+              }
+            ]
+          },
+          {
+            "choice_name": "Put Dieset 4984449, 4984462 on machine GP640",
+            "machine": {
+              "machine_id": 27,
+              "machine_name": "GP640",
+              "max_capacity_hours_per_timeslice": 146.64921202662313,
+              "max_capacity_constraint": {
+                "constraint_name": "Max Capacity Machine GP640",
+                "weight": 1.0
+              },
+              "cost_reallocation_euro": 10000.0
+            },
+            "work_required_hours": 153.57266466084454,
+            "work_cost": 215923.16651314741,
+            "transport_cost": 21484.06,
+            "transport_costs_breakdown": [
+              {
+                "location_id": 26,
+                "location_name": "MSF",
+                "truckloads": 34.0,
+                "transport_rate_euro_per_truck_per_km": 1.31,
+                "distance_km": 389.0,
+                "costs": 17326.06
+              },
+              {
+                "location_id": 2,
+                "location_name": "Dingolfing",
+                "truckloads": 42.0,
+                "transport_rate_euro_per_truck_per_km": 1.32,
+                "distance_km": 75.0,
+                "costs": 4158.0
+              }
+            ]
+          }
+        ],
+        "assign_exactly_once_constraint": null
+      },
+      {
+        "dieset_id": 2,
+        "dieset_number": "4984449, 5031550",
+        "machine_choices": [
+          {
+            "choice_name": "Put Dieset 4984449, 5031550 on machine GP260",
+            "machine": {
+              "machine_id": 24,
+              "machine_name": "GP260",
+              "max_capacity_hours_per_timeslice": 953.0326653190314,
+              "max_capacity_constraint": {
+                "constraint_name": "Max Capacity Machine GP260",
+                "weight": 1.0
+              },
+              "cost_reallocation_euro": 10000.0
+            },
+            "work_required_hours": 51.17740636052053,
+            "work_cost": 92682.28291890267,
+            "transport_cost": 0.0,
+            "transport_costs_breakdown": [
+              {
+                "location_id": 2,
+                "location_name": "Dingolfing",
+                "truckloads": 22.0,
+                "transport_rate_euro_per_truck_per_km": 999.0,
+                "distance_km": 0.0,
+                "costs": 0.0
+              }
+            ]
+          },
+          {
+            "choice_name": "Put Dieset 4984449, 5031550 on machine GP640",
+            "machine": {
+              "machine_id": 27,
+              "machine_name": "GP640",
+              "max_capacity_hours_per_timeslice": 146.64921202662313,
+              "max_capacity_constraint": {
+                "constraint_name": "Max Capacity Machine GP640",
+                "weight": 1.0
+              },
+              "cost_reallocation_euro": 10000.0
+            },
+            "work_required_hours": 51.17740636052053,
+            "work_cost": 71955.43334289188,
+            "transport_cost": 2178.0,
+            "transport_costs_breakdown": [
+              {
+                "location_id": 2,
+                "location_name": "Dingolfing",
+                "truckloads": 22.0,
+                "transport_rate_euro_per_truck_per_km": 1.32,
+                "distance_km": 75.0,
+                "costs": 2178.0
+              }
+            ]
+          }
+        ],
+        "assign_exactly_once_constraint": null
+      },
+      {
+        "dieset_id": 11,
+        "dieset_number": "4985467",
+        "machine_choices": [
+          {
+            "choice_name": "Put Dieset 4985467 on machine GP260",
+            "machine": {
+              "machine_id": 24,
+              "machine_name": "GP260",
+              "max_capacity_hours_per_timeslice": 953.0326653190314,
+              "max_capacity_constraint": {
+                "constraint_name": "Max Capacity Machine GP260",
+                "weight": 1.0
+              },
+              "cost_reallocation_euro": 10000.0
+            },
+            "work_required_hours": 68.24865701538742,
+            "work_cost": 123598.31785486662,
+            "transport_cost": 0.0,
+            "transport_costs_breakdown": [
+              {
+                "location_id": 2,
+                "location_name": "Dingolfing",
+                "truckloads": 250.0,
+                "transport_rate_euro_per_truck_per_km": 999.0,
+                "distance_km": 0.0,
+                "costs": 0.0
+              }
+            ]
+          }
+        ],
+        "assign_exactly_once_constraint": null
+      },
+      {
+        "dieset_id": 15,
+        "dieset_number": "4985478",
+        "machine_choices": [
+          {
+            "choice_name": "Put Dieset 4985478 on machine GP260",
+            "machine": {
+              "machine_id": 24,
+              "machine_name": "GP260",
+              "max_capacity_hours_per_timeslice": 953.0326653190314,
+              "max_capacity_constraint": {
+                "constraint_name": "Max Capacity Machine GP260",
+                "weight": 1.0
+              },
+              "cost_reallocation_euro": 10000.0
+            },
+            "work_required_hours": 65.75824966334619,
+            "work_cost": 119088.19014031996,
+            "transport_cost": 0.0,
+            "transport_costs_breakdown": [
+              {
+                "location_id": 2,
+                "location_name": "Dingolfing",
+                "truckloads": 250.0,
+                "transport_rate_euro_per_truck_per_km": 999.0,
+                "distance_km": 0.0,
+                "costs": 0.0
+              }
+            ]
+          }
+        ],
+        "assign_exactly_once_constraint": null
+      },
+      {
+        "dieset_id": 0,
+        "dieset_number": "4985498",
+        "machine_choices": [
+          {
+            "choice_name": "Put Dieset 4985498 on machine GP260",
+            "machine": {
+              "machine_id": 24,
+              "machine_name": "GP260",
+              "max_capacity_hours_per_timeslice": 953.0326653190314,
+              "max_capacity_constraint": {
+                "constraint_name": "Max Capacity Machine GP260",
+                "weight": 1.0
+              },
+              "cost_reallocation_euro": 10000.0
+            },
+            "work_required_hours": 47.349902561818766,
+            "work_cost": 85750.67353945378,
+            "transport_cost": 0.0,
+            "transport_costs_breakdown": [
+              {
+                "location_id": 2,
+                "location_name": "Dingolfing",
+                "truckloads": 16.0,
+                "transport_rate_euro_per_truck_per_km": 999.0,
+                "distance_km": 0.0,
+                "costs": 0.0
+              }
+            ]
+          },
+          {
+            "choice_name": "Put Dieset 4985498 on machine GP640",
+            "machine": {
+              "machine_id": 27,
+              "machine_name": "GP640",
+              "max_capacity_hours_per_timeslice": 146.64921202662313,
+              "max_capacity_constraint": {
+                "constraint_name": "Max Capacity Machine GP640",
+                "weight": 1.0
+              },
+              "cost_reallocation_euro": 10000.0
+            },
+            "work_required_hours": 47.349902561818766,
+            "work_cost": 66573.96300191717,
+            "transport_cost": 1584.0,
+            "transport_costs_breakdown": [
+              {
+                "location_id": 2,
+                "location_name": "Dingolfing",
+                "truckloads": 16.0,
+                "transport_rate_euro_per_truck_per_km": 1.32,
+                "distance_km": 75.0,
+                "costs": 1584.0
+              }
+            ]
+          }
+        ],
+        "assign_exactly_once_constraint": null
+      },
+      {
+        "dieset_id": 7,
+        "dieset_number": "5001294",
+        "machine_choices": [
+          {
+            "choice_name": "Put Dieset 5001294 on machine GP260",
+            "machine": {
+              "machine_id": 24,
+              "machine_name": "GP260",
+              "max_capacity_hours_per_timeslice": 953.0326653190314,
+              "max_capacity_constraint": {
+                "constraint_name": "Max Capacity Machine GP260",
+                "weight": 1.0
+              },
+              "cost_reallocation_euro": 10000.0
+            },
+            "work_required_hours": 73.6757656998944,
+            "work_cost": 133426.81168250876,
+            "transport_cost": 0.0,
+            "transport_costs_breakdown": [
+              {
+                "location_id": 2,
+                "location_name": "Dingolfing",
+                "truckloads": 100.0,
+                "transport_rate_euro_per_truck_per_km": 999.0,
+                "distance_km": 0.0,
+                "costs": 0.0
+              }
+            ]
+          }
+        ],
+        "assign_exactly_once_constraint": null
+      },
+      {
+        "dieset_id": 4,
+        "dieset_number": "5031549",
+        "machine_choices": [
+          {
+            "choice_name": "Put Dieset 5031549 on machine GP260",
+            "machine": {
+              "machine_id": 24,
+              "machine_name": "GP260",
+              "max_capacity_hours_per_timeslice": 953.0326653190314,
+              "max_capacity_constraint": {
+                "constraint_name": "Max Capacity Machine GP260",
+                "weight": 1.0
+              },
+              "cost_reallocation_euro": 10000.0
+            },
+            "work_required_hours": 36.07455771087313,
+            "work_cost": 65331.02401439124,
+            "transport_cost": 0.0,
+            "transport_costs_breakdown": [
+              {
+                "location_id": 2,
+                "location_name": "Dingolfing",
+                "truckloads": 24.0,
+                "transport_rate_euro_per_truck_per_km": 999.0,
+                "distance_km": 0.0,
+                "costs": 0.0
+              }
+            ]
+          }
+        ],
+        "assign_exactly_once_constraint": null
+      }
+    ]
+  },
+  "num_variables": 22,
+  "num_non_slack_variables": 6
+}
